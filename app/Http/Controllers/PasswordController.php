@@ -14,17 +14,17 @@ class PasswordController extends Controller
 {
     public function __construct()
     {
-//        // 限流密码重置页面访问，一分钟内只能允许访问两次
-//        $this->middleware('throttle:10,1', [
-//            'only' => ['showLinkRequestForm']
-//        ]);
-//
-//        // 限流密码重置邮件，十分钟内只能尝试三次
-//        $this->middleware('throttle:10,20', [
-//            'only' => ['sendResetLinkEmail']
-//        ]);
-    }
+        // 限流密码重置页面访问，十分钟内只能允许访问十二次
+        $this->middleware('throttle:12,10', [
+            'only' => ['showLinkRequestForm']
+        ]);
 
+        // 限流密码重置邮件，十分钟内只能允许尝试十二次
+        $this->middleware('throttle:12,10', [
+            'only' => ['sendResetLinkEmail']
+        ]);
+    }
+    
     public function showLinkRequestForm()
     {
         return view('auth.passwords.email');

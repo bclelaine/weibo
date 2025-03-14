@@ -22,9 +22,9 @@
 </div>
 @else
 <div class="bg-light p-3 p-sm-5 rounded">
-  <h1>Hello Laravel</h1>
+  <h1>Hello Weibo</h1>
   <p class="lead">
-    你现在所看到的是 <a href="https://learnku.com/courses/laravel-essential-training">Laravel 入门教程</a> 的示例项目主页。
+    您现在所看到的是 Weibo 主页。
   </p>
   <p>
     一切，将从这里开始。

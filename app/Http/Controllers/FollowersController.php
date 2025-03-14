@@ -12,6 +12,13 @@ class FollowersController extends Controller
         $this->middleware('auth');
     }
 
+    /**
+     * 关注
+     *
+     * @param User $user
+     * @return \Illuminate\Http\RedirectResponse
+     * @throws \Illuminate\Auth\Access\AuthorizationException
+     */
     public function store(User $user)
     {
         $this->authorize('follow', $user);
@@ -23,6 +30,13 @@ class FollowersController extends Controller
         return redirect()->route('users.show', $user->id);
     }
 
+    /**
+     * 取关
+     *
+     * @param User $user
+     * @return \Illuminate\Http\RedirectResponse
+     * @throws \Illuminate\Auth\Access\AuthorizationException
+     */
     public function destroy(User $user)
     {
         $this->authorize('follow', $user);
