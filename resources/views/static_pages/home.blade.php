@@ -22,9 +22,9 @@
 </div>
 @else
 <div class="bg-light p-3 p-sm-5 rounded">
-  <h1>Hello Weibo</h1>
+  <h1>您好，微博小站</h1>
   <p class="lead">
-    您现在所看到的是 Weibo 主页。
+    您现在所看到的是 微博小站 主页。
   </p>
   <p>
     一切，将从这里开始。

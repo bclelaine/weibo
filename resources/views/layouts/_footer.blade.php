@@ -1,7 +1,7 @@
 <footer class="footer">
-  <img class="brand-icon" src="https://cdn.learnku.com/uploads/sites/KDiyAbV0hj1ytHpRTOlVpucbLebonxeX.png">
-  <a href="https://learnku.com/laravel/courses" target=_blank class="text-decoration-none">
-    刻意练习，每日精进
+  <img class="brand-icon" src="">
+  <a href="" target=_blank class="text-decoration-none">
+    永怀善意，清澈明朗
   </a>
 
   <div class="float-end">
